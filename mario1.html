@@ -3,6 +3,11 @@
 		<link rel="stylesheet" type="text/css" href="style.css">
 	</head>
 	<body>
+		<head>
+				<script type="text/javascript" src="https://unpkg.com/jsnes/dist/jsnes.min.js"></script>
+			<script type="text/javascript" src="nes-embed.js"></script>
+			<script>window.onload = function(){nes_load_url("nes-canvas", "nes/mario1.nes");}</script>
+		</head>
 		<header>
 			<div class="logo">
 				<p class="pigpile">cadilacs</p>
@@ -10,10 +15,6 @@
 			<div class="directory">
 				<p class="directorytext"><a href="index.html" class="lelink">Home</a> -> <a href="nes.html" class="lelink">NES</a> -> Super Mario Bros.</p>
 			</div>
-			
-			<script type="text/javascript" src="https://unpkg.com/jsnes/dist/jsnes.min.js"></script>
-			<script type="text/javascript" src="nes-embed.js"></script>
-			<script>window.onload = function(){nes_load_url("nes-canvas", "nes/mario1.nes");}</script>
 		</header>
 		<div style="width: 800px; margin: auto;">
 			<div class="gametitle">
