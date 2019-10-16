@@ -1,0 +1,32 @@
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="style.css">
+	</head>
+	<body>
+		<header>
+			<div class="logo">
+				<p class="pigpile">cadilacs</p>
+			</div>
+			<div class="directory">
+				<p class="directorytext"><a href="index.html" class="lelink">Home</a> -> <a href="nes.html" class="lelink">NES</a> -> Super Mario Bros.</p>
+			</div>
+			
+			<script type="text/javascript" src="https://unpkg.com/jsnes/dist/jsnes.min.js"></script>
+			<script type="text/javascript" src="nes-embed.js"></script>
+			<script>window.onload = function(){nes_load_url("nes-canvas", "nes/mario1.nes");}</script>
+		</header>
+		<div style="width: 800px; margin: auto;">
+			<div class="gametitle">
+				<p class="title">Super Mario Bros.</p>
+				<p>Play as a illegal Mexican immigrant trying to dodge ICE after jumping over the border.</p>
+			</div>
+			<canvas id="nes-canvas" width="256" height="240" style="width: 100%"/>
+		</div>
+		<footer>
+			<div class="footer">
+				<p class="footertext">DISCLAIMER:</p>
+				<p class="footertext">this website is heavily work in progress. things may be buggy or incomplete; just give me time to iron stuff out.</p>
+			</div>
+		</footer>
+	</body>
+</html>
